@@ -1,0 +1,6 @@
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import "swiper/css/free-mode";
+@import "lenis/dist/lenis.css";
+@import "./base.css";
+@import "./extra.css";

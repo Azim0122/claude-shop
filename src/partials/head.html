@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{desc}}">
+<meta name="theme-color" content="#0e0f12">
+<!-- DEPLOY STEP: после публикации добавить og:url и og:image с абсолютными адресами -->
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{desc}}">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e0f12'/%3E%3Cpath d='M44 22a14 14 0 1 0 0 20' fill='none' stroke='%23ff4b1f' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://images.pexels.com">
+<link rel="preload" href="assets/fonts/oswald-cyrillic-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/app.css">
+<script>document.documentElement.classList.add("js");try{sessionStorage.getItem("cs-visited")&&document.documentElement.classList.add("is-return")}catch(e){}</script>
+</head>
+<!--
+  НАСТРОЙКА: впиши свой Telegram-ник (без @) в data-tg ниже (на каждой странице).
+  Все кнопки «Заказать» откроют чат с этим аккаунтом и готовым сообщением.
+-->
+<body class="is-loading" data-page="{{page}}" data-hero="{{hero}}" data-tg="claudeshop">
+<a class="skip" href="#main">Перейти к содержанию</a>
+<div class="progress" aria-hidden="true"><i></i></div>
+
+<div class="loader" aria-hidden="true">
+  <div class="loader__top mono"><span>Collection AW/26</span><span><b id="loaderNum">00</b>%</span></div>
+  <div class="loader__word"><span>C</span><span>L</span><span>A</span><span>U</span><span>D</span><span>E</span><i></i><span class="o">S</span><span class="o">H</span><span class="o">O</span><span class="o">P</span></div>
+  <div class="loader__bar"><i></i></div>
+</div>
+<div class="pt" aria-hidden="true"><div class="pt__logo"><b>CLAUDE</b><span>SHOP</span></div></div>
+<div class="cursor" aria-hidden="true"><span class="cursor__label">Смотреть</span></div>

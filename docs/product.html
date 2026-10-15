@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Товар · CLAUDE SHOP</title>
+<meta name="description" content="Оригинальная вещь под заказ в CLAUDE SHOP: фото, размеры, цена и заказ в Telegram в один клик.">
+<meta name="theme-color" content="#0e0f12">
+<!-- DEPLOY STEP: после публикации добавить og:url и og:image с абсолютными адресами -->
+<meta property="og:title" content="Товар · CLAUDE SHOP">
+<meta property="og:description" content="Оригинальная вещь под заказ в CLAUDE SHOP: фото, размеры, цена и заказ в Telegram в один клик.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e0f12'/%3E%3Cpath d='M44 22a14 14 0 1 0 0 20' fill='none' stroke='%23ff4b1f' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://images.pexels.com">
+<link rel="preload" href="assets/fonts/oswald-cyrillic-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/app.css">
+<script>document.documentElement.classList.add("js");try{sessionStorage.getItem("cs-visited")&&document.documentElement.classList.add("is-return")}catch(e){}</script>
+</head>
+<!--
+  НАСТРОЙКА: впиши свой Telegram-ник (без @) в data-tg ниже (на каждой странице).
+  Все кнопки «Заказать» откроют чат с этим аккаунтом и готовым сообщением.
+-->
+<body class="is-loading" data-page="product" data-hero="light" data-tg="claudeshop">
+<a class="skip" href="#main">Перейти к содержанию</a>
+<div class="progress" aria-hidden="true"><i></i></div>
+
+<div class="loader" aria-hidden="true">
+  <div class="loader__top mono"><span>Collection AW/26</span><span><b id="loaderNum">00</b>%</span></div>
+  <div class="loader__word"><span>C</span><span>L</span><span>A</span><span>U</span><span>D</span><span>E</span><i></i><span class="o">S</span><span class="o">H</span><span class="o">O</span><span class="o">P</span></div>
+  <div class="loader__bar"><i></i></div>
+</div>
+<div class="pt" aria-hidden="true"><div class="pt__logo"><b>CLAUDE</b><span>SHOP</span></div></div>
+<div class="cursor" aria-hidden="true"><span class="cursor__label">Смотреть</span></div>
+<header class="head" id="nav">
+  <div class="bar" aria-label="Объявления">
+    <div class="bar__track">
+      <span>Новая коллекция AW/26</span><em>✶</em><span>Только оригиналы</span><em>✶</em><span>Заказ в Telegram за один клик</span><em>✶</em><span>Доставка в Фергане и по всему Узбекистану</span><em>✶</em>
+      <span>Новая коллекция AW/26</span><em>✶</em><span>Только оригиналы</span><em>✶</em><span>Заказ в Telegram за один клик</span><em>✶</em><span>Доставка в Фергане и по всему Узбекистану</span><em>✶</em>
+    </div>
+  </div>
+  <div class="nav">
+    <nav class="nav__links" aria-label="Основное меню">
+      <a href="index.html#catalog" data-nav="catalog" data-magnetic>Каталог</a>
+      <a href="index.html#new" data-magnetic>Новинки</a>
+      <a href="brands.html" data-nav="brands" data-magnetic>Бренды</a>
+      <a href="about.html" data-nav="about" data-magnetic>О нас</a>
+    </nav>
+    <a href="index.html" class="logo" aria-label="CLAUDE SHOP, на главную"><b>CLAUDE</b><span>SHOP</span></a>
+    <div class="nav__actions">
+      <a href="index.html#how" class="nav__how" data-magnetic>Как заказать</a>
+      <button class="nav__cart" id="cartBtn" aria-label="Открыть корзину" data-magnetic>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8zM9 8V6.5a3 3 0 0 1 6 0V8"/></svg>
+        <span>Корзина</span><b class="nav__count" id="cartCount">0</b>
+      </button>
+      <button class="nav__burger" id="burger" aria-label="Открыть меню" aria-expanded="false"><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+<div class="mmenu" id="mmenu" aria-hidden="true">
+  <nav aria-label="Мобильное меню">
+    <a href="index.html">Главная</a><a href="index.html#catalog">Каталог</a><a href="brands.html">Бренды</a><a href="about.html">О нас</a><a href="index.html#how">Как заказать</a>
+  </nav>
+  <button class="btn btn--tg" data-tg-ask><span>Написать в Telegram</span></button>
+</div>
+<main id="main" tabindex="-1">
+
+<section class="pp" id="top">
+  <nav class="crumbs mono" aria-label="Навигация">
+    <a href="index.html">Главная</a><span>/</span><a href="index.html#catalog" id="crumbCat">Каталог</a><span>/</span><b id="crumbName"></b>
+  </nav>
+  <div class="pp__grid">
+    <div class="pg">
+      <div class="pg__list" id="gallery" data-lenis-prevent-horizontal></div>
+      <div class="pg__dots" id="gDots" aria-hidden="true"></div>
+    </div>
+    <aside class="pinfo">
+      <p class="mono pinfo__brand" id="pBrand"></p>
+      <h1 class="pinfo__title" id="pTitle"></h1>
+      <div class="pinfo__price"><span id="pPrice"></span><span class="mono" id="pColor"></span></div>
+      <p class="pinfo__desc" id="pDesc"></p>
+      <div class="qv__sizehead"><p class="mono" id="pLabel">Размер</p><button class="linkbtn" data-sg-open>Таблица размеров</button></div>
+      <div class="sizes" id="pSizes"></div>
+      <p class="mono pinfo__chosen" id="pChosen" aria-live="polite"></p>
+      <div class="pinfo__btns">
+        <button class="btn btn--tg btn--big" id="pOrder" data-magnetic><svg class="tgi" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 3.5 2.8 10.7c-1 .4-1 1.8.1 2.1l4.6 1.4 1.8 5.6c.3.9 1.4 1.1 2 .4l2.6-2.6 4.6 3.4c.8.6 1.9.1 2.1-.8L23 4.9c.2-1-.7-1.8-1.5-1.4Z"/></svg><span>Заказать в Telegram</span></button>
+        <button class="btn btn--line btn--big" id="pAdd" data-magnetic><span>В корзину</span></button>
+      </div>
+      <ul class="pinfo__perks">
+        <li><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5 8 11v12c0 10 7 17 16 20 9-3 16-10 16-20V11L24 5zM17 24l5 5 9-10"/></svg><span>Оригинал, проверяем по 5 пунктам перед отправкой</span></li>
+        <li><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 16h24v18H6zM30 22h7l5 6v6H30M12 38a4 4 0 1 0 0-.1M36 38a4 4 0 1 0 0-.1"/></svg><span>14–21 день до двери, трек-номер в чате</span></li>
+        <li><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 10h32v22H20l-8 7v-7H8zM16 19h16M16 25h10"/></svg><span>Финальная цена фиксируется в Telegram</span></li>
+      </ul>
+      <div class="pinfo__qa">
+        <details class="qa"><summary>Как проверяем</summary><div class="qa__a"><p>Бирки и серийные коды, швы и строчка, материал и вес, фурнитура и логотип, коробка, чек и пыльник. Фото каждого пункта присылаем в чат.</p></div></details>
+        <details class="qa"><summary>Доставка и оплата</summary><div class="qa__a"><p>Курьером до двери или в пункт выдачи: Фергана и весь Узбекистан. Ничего не платишь, пока мы не подтвердили наличие, цену и срок. <a href="about.html#delivery" class="ulink">Подробнее</a></p></div></details>
+        <details class="qa"><summary>Нужен другой цвет или размер</summary><div class="qa__a"><p>Напиши в Telegram: найдём нужную расцветку или размер, даже если их нет на сайте.</p></div></details>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<div class="tapes tapes--solo tapes--light" aria-hidden="true">
+  <div class="tape tape--ink" data-dir="-1" data-speed="80" id="pTape"></div>
+</div>
+
+<section class="section rel" id="related">
+  <div class="sechead">
+    <div><p class="kicker mono" data-scramble>Ещё посмотреть</p><h2 class="h2 split">Похожие вещи</h2></div>
+    <div class="new__ctrl">
+      <button class="round" id="relPrev" aria-label="Назад"><svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+      <button class="round" id="relNext" aria-label="Вперёд"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    </div>
+  </div>
+  <div class="swiper rel__swiper"><div class="swiper-wrapper" id="relTrack"></div></div>
+</section>
+
+<section class="cta cta--compact" id="join" data-fab-hide>
+  <div class="cta__inner">
+    <h2 class="cta__title">Есть вопрос<br>по вещи?</h2>
+    <div class="cta__row">
+      <button class="btn btn--tg btn--big" data-tg-ask data-magnetic><svg class="tgi" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 3.5 2.8 10.7c-1 .4-1 1.8.1 2.1l4.6 1.4 1.8 5.6c.3.9 1.4 1.1 2 .4l2.6-2.6 4.6 3.4c.8.6 1.9.1 2.1-.8L23 4.9c.2-1-.7-1.8-1.5-1.4Z"/></svg><span>Спросить в Telegram</span></button>
+      <a href="index.html#catalog" class="btn btn--line btn--big" data-magnetic><span>Весь каталог</span></a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="footer__big" aria-hidden="true">CLAUDE SHOP</div>
+  <div class="footer__cols">
+    <div><p class="mono">Магазин</p><a href="index.html#cats">Категории</a><a href="index.html#new">Новинки</a><a href="index.html#catalog">Каталог</a><a href="brands.html">Бренды</a></div>
+    <div><p class="mono">Помощь</p><a href="index.html#how">Как заказать</a><a href="about.html#delivery">Доставка</a><a href="index.html#faq">Вопросы</a><a href="#" data-sg-open>Таблица размеров</a></div>
+    <div><p class="mono">О нас</p><a href="about.html">Кто мы</a><a href="about.html#path">Путь вещи</a><a href="#" data-tg-ask>Telegram</a></div>
+  </div>
+  <p class="footer__note mono">© 2026 CLAUDE SHOP. Продаём оригинальные вещи под заказ. Товарные знаки Nike, Jordan, Adidas, New Balance, Chanel, Louis Vuitton, Gucci и других брендов принадлежат их владельцам. Мы не являемся официальным представителем брендов. Фотографии: Pexels, их авторы. Цены на сайте ориентировочные, финальная цена фиксируется в Telegram.</p>
+</footer>
+
+<button class="fab" id="fab" aria-label="Заказать в Telegram" data-tg-cart>
+  <svg class="tgi" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 3.5 2.8 10.7c-1 .4-1 1.8.1 2.1l4.6 1.4 1.8 5.6c.3.9 1.4 1.1 2 .4l2.6-2.6 4.6 3.4c.8.6 1.9.1 2.1-.8L23 4.9c.2-1-.7-1.8-1.5-1.4Z"/></svg>
+  <span class="fab__label">Заказать</span><b class="fab__count zero" id="fabCount">0</b>
+</button>
+
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="Корзина">
+  <div class="drawer__bg" data-close></div>
+  <div class="drawer__panel" data-lenis-prevent>
+    <div class="drawer__head"><h2>Корзина</h2><button class="round" data-close aria-label="Закрыть корзину"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <ul class="drawer__list" id="cartList"></ul>
+    <div class="drawer__msg" id="msgWrap" hidden>
+      <p class="mono">Это сообщение уйдёт менеджеру</p>
+      <div class="bubble" id="msgPreview"></div>
+    </div>
+    <div class="drawer__foot">
+      <div class="drawer__row"><span>Итого, примерно</span><span id="cartTotal">0 сум</span></div>
+      <button class="btn btn--tg btn--full" id="checkout" data-tg-cart><svg class="tgi" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 3.5 2.8 10.7c-1 .4-1 1.8.1 2.1l4.6 1.4 1.8 5.6c.3.9 1.4 1.1 2 .4l2.6-2.6 4.6 3.4c.8.6 1.9.1 2.1-.8L23 4.9c.2-1-.7-1.8-1.5-1.4Z"/></svg><span>Заказать в Telegram</span></button>
+      <p class="mono drawer__fine">Финальную цену и срок подтвердим в чате</p>
+    </div>
+  </div>
+</aside>
+
+<div class="qv" id="qv" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="qvTitle">
+  <div class="qv__bg" data-qclose></div>
+  <div class="qv__panel" data-lenis-prevent>
+    <button class="round qv__x" data-qclose aria-label="Закрыть"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <div class="qv__gallery"><div class="swiper qv__swiper"><div class="swiper-wrapper" id="qvSlides"></div><div class="swiper-pagination qv__pag"></div></div></div>
+    <div class="qv__info">
+      <p class="mono qv__cat" id="qvCat"></p>
+      <h2 class="qv__title" id="qvTitle"></h2>
+      <p class="qv__price" id="qvPrice"></p>
+      <p class="qv__desc" id="qvDesc"></p>
+      <div class="qv__sizehead"><p class="mono" id="qvLabel">Размер</p><button class="linkbtn" data-sg-open>Таблица размеров</button></div>
+      <div class="sizes" id="qvSizes"></div>
+      <div class="qv__btns">
+        <button class="btn btn--tg" id="qvOrder"><svg class="tgi" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 3.5 2.8 10.7c-1 .4-1 1.8.1 2.1l4.6 1.4 1.8 5.6c.3.9 1.4 1.1 2 .4l2.6-2.6 4.6 3.4c.8.6 1.9.1 2.1-.8L23 4.9c.2-1-.7-1.8-1.5-1.4Z"/></svg><span>Заказать</span></button>
+        <button class="btn btn--line" id="qvAdd"><span>В корзину</span></button>
+      </div>
+      <a class="qv__page" id="qvPage" href="product.html">Открыть страницу товара<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <ul class="qv__specs mono"><li>Оригинал, проверка перед отправкой</li><li>Срок 14–21 день до двери</li><li>Финальная цена фиксируется в чате</li></ul>
+    </div>
+  </div>
+</div>
+
+<div class="qv sg" id="sg" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="sgTitle">
+  <div class="qv__bg" data-sgclose></div>
+  <div class="qv__panel sg__panel" data-lenis-prevent>
+    <button class="round qv__x" data-sgclose aria-label="Закрыть"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <div class="sg__body">
+      <h2 class="qv__title" id="sgTitle">Таблица размеров</h2>
+      <div class="seg sg__tabs" role="tablist"><button class="seg__b is-on" data-sgtab="wear" role="tab" aria-selected="true">Одежда</button><button class="seg__b" data-sgtab="shoes" role="tab" aria-selected="false">Обувь</button></div>
+      <div class="sg__t" data-sgp="wear">
+        <table><thead><tr><th>Размер</th><th>RU</th><th>Грудь, см</th><th>Талия, см</th></tr></thead><tbody>
+          <tr><td>XS</td><td>42</td><td>82–86</td><td>62–66</td></tr><tr><td>S</td><td>44</td><td>86–90</td><td>66–70</td></tr><tr><td>M</td><td>46</td><td>90–94</td><td>70–76</td></tr>
+          <tr><td>L</td><td>48</td><td>94–100</td><td>76–82</td></tr><tr><td>XL</td><td>50</td><td>100–106</td><td>82–88</td></tr><tr><td>XXL</td><td>52</td><td>106–112</td><td>88–94</td></tr></tbody></table>
+      </div>
+      <div class="sg__t" data-sgp="shoes" hidden>
+        <table><thead><tr><th>EU</th><th>Длина стопы, см</th><th>EU</th><th>Длина стопы, см</th></tr></thead><tbody>
+          <tr><td>36</td><td>23</td><td>42</td><td>27</td></tr><tr><td>37</td><td>23.5</td><td>43</td><td>27.5</td></tr><tr><td>38</td><td>24</td><td>44</td><td>28</td></tr>
+          <tr><td>39</td><td>25</td><td>45</td><td>29</td></tr><tr><td>40</td><td>25.5</td><td>46</td><td>29.5</td></tr><tr><td>41</td><td>26</td><td></td><td></td></tr></tbody></table>
+      </div>
+      <p class="sg__note">Таблица примерная: у каждого бренда свой крой. Напиши в Telegram, и мы подскажем точный размер под конкретную модель.</p>
+      <button class="btn btn--tg btn--full" data-tg-ask><span>Спросить про размер</span></button>
+    </div>
+  </div>
+</div>
+
+<div class="toast mono" id="toast" role="status" aria-live="polite"></div>
+<script src="assets/app.js" defer></script>
+</body>
+</html>

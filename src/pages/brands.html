@@ -1,0 +1,72 @@
+<!--@meta {"title":"Бренды · CLAUDE SHOP","desc":"Бренды, которые привозит CLAUDE SHOP: Nike, Jordan, Adidas, New Balance, Off-White, Chanel, Louis Vuitton, Gucci, Prada, Dior и другие. Любой бренд под заказ.","page":"brands"} -->
+<main id="main" tabindex="-1">
+
+<section class="bhero" id="top">
+  <span class="bhero__orb" aria-hidden="true"></span>
+  <p class="kicker mono reveal-up">Индекс брендов · 2026</p>
+  <h1 class="bhero__title" aria-label="Бренды">Бренды</h1>
+  <div class="bhero__row">
+    <p class="bhero__sub reveal-up">От кроссовок Nike до сумок Chanel. Здесь те, что мы возим чаще всего, но привезём любой бренд: пришли ссылку или фото.</p>
+    <ul class="bhero__meta mono reveal-up">
+      <li><b data-count="14">0</b> брендов в индексе</li>
+      <li><b data-count="5">0</b> городов-источников</li>
+      <li><b>∞</b> под запрос</li>
+    </ul>
+  </div>
+</section>
+
+<section class="tapes" aria-label="Бренды">
+  <div class="tape tape--accent" data-dir="-1" data-words="Nike|Jordan|Adidas|Chanel|Gucci|Louis Vuitton|New Balance|Prada|Dior|Off-White|Balenciaga|Bape" data-pics="4277507|2225727|15981457|16764266|6839|12607446|10077951|4252965"></div>
+  <div class="tape tape--ink" data-dir="1" data-speed="70" data-words="Любой бренд под заказ|Из бутиков мира|До двери в Фергане|Только оригиналы" data-pics="2225727|16304369|10077951|15632277"></div>
+</section>
+
+<!-- Индекс -->
+<section class="section bindex" id="index">
+  <div class="sechead">
+    <div><p class="kicker mono" data-scramble>01 / Индекс</p><h2 class="h2 split">Кого везём</h2></div>
+    <p class="sechead__note">Наведи на бренд, чтобы увидеть вещи. Нажми, и откроется каталог с фильтром. Бренды без товаров на сайте привезём под запрос.</p>
+  </div>
+  <div class="filters bindex__filter" id="cityFilter" role="tablist" aria-label="Город"></div>
+  <ul class="blist" id="brandList"></ul>
+  <div class="preview" id="preview" aria-hidden="true"><div class="preview__in"><img alt=""><b class="preview__mono"></b></div></div>
+</section>
+
+<!-- Витрина -->
+<section class="section bshow" id="showcase">
+  <div class="sechead">
+    <div><p class="kicker mono" data-scramble>02 / Витрина</p><h2 class="h2 split">Хиты по брендам</h2></div>
+    <div class="seg bshow__tabs" id="showTabs" role="group" aria-label="Бренд">
+      <button class="seg__b is-on" data-k="0" aria-pressed="true">Nike</button>
+      <button class="seg__b" data-k="1" aria-pressed="false">Jordan</button>
+      <button class="seg__b" data-k="2" aria-pressed="false">Adidas</button>
+      <button class="seg__b" data-k="3" aria-pressed="false">New Balance</button>
+      <button class="seg__b" data-k="4" aria-pressed="false">Люкс</button>
+    </div>
+  </div>
+  <div class="grid bshow__grid" id="showGrid"></div>
+</section>
+
+<!-- Кольцо кроссовок -->
+<section class="section look" id="lookbook">
+  <div class="look__head">
+    <p class="kicker mono" data-scramble>03 / Кроссовки</p>
+    <h2 class="h2 split">Пары, которые везём</h2>
+    <p class="look__hint mono"><span class="look__dot"></span>Тяни, чтобы вращать</p>
+  </div>
+  <div class="look__stage" id="ringStage"><div class="look__ring"></div></div>
+  <p class="look__caption mono" aria-live="polite">01 · Nike Air Force 1</p>
+</section>
+
+<!-- Запрос -->
+<section class="cta" id="join" data-fab-hide>
+  <div class="cta__marq" aria-hidden="true"><div class="tape tape--ink tape--flat" data-dir="-1" data-speed="110" data-words="Любой бренд под заказ|Пришли ссылку|Найдём оригинал"></div></div>
+  <div class="cta__inner">
+    <h2 class="cta__title">Не нашёл свой<br>бренд? Привезём.</h2>
+    <p class="cta__lede">Пришли фото или ссылку в Telegram. Найдём оригинал, назовём цену и срок, а дальше всё как обычно.</p>
+    <div class="cta__row">
+      <button class="btn btn--tg btn--big" data-tg-ask data-magnetic>{{tg}}<span>Найти под запрос</span></button>
+      <a href="index.html#catalog" class="btn btn--line btn--big" data-magnetic><span>Весь каталог</span></a>
+    </div>
+  </div>
+</section>
+</main>

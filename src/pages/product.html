@@ -1,0 +1,63 @@
+<!--@meta {"title":"Товар · CLAUDE SHOP","desc":"Оригинальная вещь под заказ в CLAUDE SHOP: фото, размеры, цена и заказ в Telegram в один клик.","page":"product","hero":"light"} -->
+<main id="main" tabindex="-1">
+
+<section class="pp" id="top">
+  <nav class="crumbs mono" aria-label="Навигация">
+    <a href="index.html">Главная</a><span>/</span><a href="index.html#catalog" id="crumbCat">Каталог</a><span>/</span><b id="crumbName"></b>
+  </nav>
+  <div class="pp__grid">
+    <div class="pg">
+      <div class="pg__list" id="gallery" data-lenis-prevent-horizontal></div>
+      <div class="pg__dots" id="gDots" aria-hidden="true"></div>
+    </div>
+    <aside class="pinfo">
+      <p class="mono pinfo__brand" id="pBrand"></p>
+      <h1 class="pinfo__title" id="pTitle"></h1>
+      <div class="pinfo__price"><span id="pPrice"></span><span class="mono" id="pColor"></span></div>
+      <p class="pinfo__desc" id="pDesc"></p>
+      <div class="qv__sizehead"><p class="mono" id="pLabel">Размер</p><button class="linkbtn" data-sg-open>Таблица размеров</button></div>
+      <div class="sizes" id="pSizes"></div>
+      <p class="mono pinfo__chosen" id="pChosen" aria-live="polite"></p>
+      <div class="pinfo__btns">
+        <button class="btn btn--tg btn--big" id="pOrder" data-magnetic>{{tg}}<span>Заказать в Telegram</span></button>
+        <button class="btn btn--line btn--big" id="pAdd" data-magnetic><span>В корзину</span></button>
+      </div>
+      <ul class="pinfo__perks">
+        <li><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5 8 11v12c0 10 7 17 16 20 9-3 16-10 16-20V11L24 5zM17 24l5 5 9-10"/></svg><span>Оригинал, проверяем по 5 пунктам перед отправкой</span></li>
+        <li><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 16h24v18H6zM30 22h7l5 6v6H30M12 38a4 4 0 1 0 0-.1M36 38a4 4 0 1 0 0-.1"/></svg><span>14–21 день до двери, трек-номер в чате</span></li>
+        <li><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 10h32v22H20l-8 7v-7H8zM16 19h16M16 25h10"/></svg><span>Финальная цена фиксируется в Telegram</span></li>
+      </ul>
+      <div class="pinfo__qa">
+        <details class="qa"><summary>Как проверяем</summary><div class="qa__a"><p>Бирки и серийные коды, швы и строчка, материал и вес, фурнитура и логотип, коробка, чек и пыльник. Фото каждого пункта присылаем в чат.</p></div></details>
+        <details class="qa"><summary>Доставка и оплата</summary><div class="qa__a"><p>Курьером до двери или в пункт выдачи: Фергана и весь Узбекистан. Ничего не платишь, пока мы не подтвердили наличие, цену и срок. <a href="about.html#delivery" class="ulink">Подробнее</a></p></div></details>
+        <details class="qa"><summary>Нужен другой цвет или размер</summary><div class="qa__a"><p>Напиши в Telegram: найдём нужную расцветку или размер, даже если их нет на сайте.</p></div></details>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<div class="tapes tapes--solo tapes--light" aria-hidden="true">
+  <div class="tape tape--ink" data-dir="-1" data-speed="80" id="pTape"></div>
+</div>
+
+<section class="section rel" id="related">
+  <div class="sechead">
+    <div><p class="kicker mono" data-scramble>Ещё посмотреть</p><h2 class="h2 split">Похожие вещи</h2></div>
+    <div class="new__ctrl">
+      <button class="round" id="relPrev" aria-label="Назад"><svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+      <button class="round" id="relNext" aria-label="Вперёд"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    </div>
+  </div>
+  <div class="swiper rel__swiper"><div class="swiper-wrapper" id="relTrack"></div></div>
+</section>
+
+<section class="cta cta--compact" id="join" data-fab-hide>
+  <div class="cta__inner">
+    <h2 class="cta__title">Есть вопрос<br>по вещи?</h2>
+    <div class="cta__row">
+      <button class="btn btn--tg btn--big" data-tg-ask data-magnetic>{{tg}}<span>Спросить в Telegram</span></button>
+      <a href="index.html#catalog" class="btn btn--line btn--big" data-magnetic><span>Весь каталог</span></a>
+    </div>
+  </div>
+</section>
+</main>
